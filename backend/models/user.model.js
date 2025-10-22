@@ -22,7 +22,7 @@ const userSchema = new mongoose.Schema({
     password:{
         type: String,
         required: true,
-        unique: true
+        
     },
     profileImage:{
         type: String,
@@ -62,7 +62,7 @@ const userSchema = new mongoose.Schema({
     ],
     connection:[
         {type:mongoose.Schema.Types.ObjectId,
-        ref:User
+        ref: "User"
         }
     ]
 
